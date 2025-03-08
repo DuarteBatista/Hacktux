@@ -1,0 +1,268 @@
+{
+    "labs": [
+        {
+            "id": "3757509121",
+            "name": "Water Tank Laboratory Modbus TCP/IP",
+            "type": "Attack",
+            "description": "In a factory there is a water tank, which fills and empties when the water reaches the limits of the tank, the PLC communicates with the sensors and actuators of the tank via the ModBus TCP/IP protocol, in this scenario the user is connected to the network through which the equipment communicates and the objective is simple to carry out the attack of your choice.",
+            "flag-guided": false,
+            "Tags": {
+                "Protocol": "ModBus"
+            },
+            "vms-necessary": [
+                {
+                    "id-hacktux": "3757509143",
+                    "vm-username": "kali",
+                    "vm-password": "kali",
+                    "name": "Kali-Hacktux",
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\kali-linux-2024.1-vmware-amd64\\kali-linux-2024.1-vmware-amd64.vmx",
+                    "id-workstation": "DS4KNPDL3MMUOB1C7TP78RMQLDM1UKTB"
+                },
+                {
+                    "id-hacktux": "6420326868",
+                    "name": "Windows-10-32b-Codesys-PLC",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_WATER_TANK_MODBUS.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-CODESYS-PLC.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-CODESYS-PLC\\Windows-10-32-CODESYS-PLC.vmx",
+                    "id-workstation": "TQM6O87IBKCMHQNVK3QVIKGU0K1QO6G5"
+                },
+                {
+                    "id-hacktux": "7907966190",
+                    "name": "Windows-10-32b-FactoryIO",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_WATER_TANK_MODBUS.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-FACTORY-IO.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-FACTORY-IO\\Windows-10-32-FACTORY-IO.vmx",
+                    "id-workstation": "9T7HKICH7A7ICNO131UOFEMTFGRBSJV9"
+                }
+            ]
+        },
+        {
+            "id": "1822522181",
+            "name": "Water Tank Laboratory OPC-UA",
+            "type": "Attack",
+            "description": "In a factory there is a water tank, which fills and empties when the water reaches the limits of the tank, the PLC communicates with the sensors and actuators of the tank via the OPC UA protocol, in this scenario the user is connected to the network through which the equipment communicates and the objective is simple to carry out the attack of your choice.",
+            "flag-guided": false,
+            "Tags": {
+                "Protocol": "OPC-UA"
+            },
+            "vms-necessary": [
+                {
+                    "id-hacktux": "3757509143",
+                    "vm-username": "kali",
+                    "vm-password": "kali",
+                    "name": "Kali-Hacktux",
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\kali-linux-2024.1-vmware-amd64\\kali-linux-2024.1-vmware-amd64.vmx",
+                    "id-workstation": "DS4KNPDL3MMUOB1C7TP78RMQLDM1UKTB"
+                },
+                {
+                    "id-hacktux": "6420326868",
+                    "name": "Windows-10-32b-Codesys-PLC",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_WATER_TANK_OPC_UA.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-CODESYS-PLC.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-CODESYS-PLC\\Windows-10-32-CODESYS-PLC.vmx",
+                    "id-workstation": "TQM6O87IBKCMHQNVK3QVIKGU0K1QO6G5"
+                },
+                {
+                    "id-hacktux": "7907966190",
+                    "name": "Windows-10-32b-FactoryIO",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_WATER_TANK_OPC-UA.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-FACTORY-IO.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-FACTORY-IO\\Windows-10-32-FACTORY-IO.vmx",
+                    "id-workstation": "9T7HKICH7A7ICNO131UOFEMTFGRBSJV9"
+                }
+            ]
+        },
+        {
+            "id": "2237099939",
+            "name": "Mechanical Hand Laboratory Modbus TCP/IP",
+            "type": "Attack",
+            "description": "In a factory there is a mechanical hand that moves the boxes that are being moved on a conveyor belt to another conveyor belt, the PLC communicates with the arm and the conveyors via the ModBus TCP/IP protocol, your objective is simple to analyze the scenario and carry out the actions you want, whether they are good or bad.",
+            "flag-guided": false,
+            "Tags": {
+                "Protocol": "ModBus"
+            },
+            "vms-necessary": [
+                {
+                    "id-hacktux": "3757509143",
+                    "vm-username": "kali",
+                    "vm-password": "kali",
+                    "name": "Kali-Hacktux",
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\kali-linux-2024.1-vmware-amd64\\kali-linux-2024.1-vmware-amd64.vmx",
+                    "id-workstation": "DS4KNPDL3MMUOB1C7TP78RMQLDM1UKTB"
+                },
+                {
+                    "id-hacktux": "6420326868",
+                    "name": "Windows-10-32b-Codesys-PLC",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_MECHANICAL_HAND_MODBUS.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-CODESYS-PLC.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-CODESYS-PLC\\Windows-10-32-CODESYS-PLC.vmx",
+                    "id-workstation": "TQM6O87IBKCMHQNVK3QVIKGU0K1QO6G5"
+                },
+                {
+                    "id-hacktux": "7907966190",
+                    "name": "Windows-10-32b-FactoryIO",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_MECHANICAL_HAND_MODBUS.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-FACTORY-IO.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-FACTORY-IO\\Windows-10-32-FACTORY-IO.vmx",
+                    "id-workstation": "9T7HKICH7A7ICNO131UOFEMTFGRBSJV9"
+                }
+            ]
+        },
+        {
+            "id": "5278215550",
+            "name": "Mechanical Hand Laboratory OPC-UA",
+            "type": "Attack",
+            "description": "In a factory there is a mechanical hand that moves the boxes that are being moved on a conveyor belt to another conveyor belt, the PLC communicates with the arm and the conveyors via the OPC-UA protocol, your objective is simple to analyze the scenario and carry out the actions you want, whether they are good or bad.",
+            "flag-guided": false,
+            "Tags": {
+                "Protocol": "OPC-UA"
+            },
+            "vms-necessary": [
+                {
+                    "id-hacktux": "3757509143",
+                    "vm-username": "kali",
+                    "vm-password": "kali",
+                    "name": "Kali-Hacktux",
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\kali-linux-2024.1-vmware-amd64\\kali-linux-2024.1-vmware-amd64.vmx",
+                    "id-workstation": "DS4KNPDL3MMUOB1C7TP78RMQLDM1UKTB"
+                },
+                {
+                    "id-hacktux": "6420326868",
+                    "name": "Windows-10-32b-Codesys-PLC",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_MECHANICAL_HAND_OPC_UA.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-CODESYS-PLC.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-CODESYS-PLC\\Windows-10-32-CODESYS-PLC.vmx",
+                    "id-workstation": "TQM6O87IBKCMHQNVK3QVIKGU0K1QO6G5"
+                },
+                {
+                    "id-hacktux": "7907966190",
+                    "name": "Windows-10-32b-FactoryIO",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_MECHANICAL_HAND_OPC_UA.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-FACTORY-IO.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-FACTORY-IO\\Windows-10-32-FACTORY-IO.vmx",
+                    "id-workstation": "9T7HKICH7A7ICNO131UOFEMTFGRBSJV9"
+                }
+            ]
+        },
+        {
+            "id": "9641348444",
+            "name": "Division Parts Laboratory Modbus TCP/IP",
+            "type": "Attack",
+            "description": "In a factory there is a system that allows different parts to be split to different locations, the PLC communicates with the sensors and actuators via the ModBus TCP/IP communication protocol, the aim is simple to carry out the actions that the user wants.",
+            "flag-guided": false,
+            "Tags": {
+                "Protocol": "ModBus"
+            },
+            "vms-necessary": [
+                {
+                    "id-hacktux": "3757509143",
+                    "name": "Kali-Hacktux",
+                    "vm-username": "kali",
+                    "vm-password": "kali",
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\kali-linux-2024.1-vmware-amd64\\kali-linux-2024.1-vmware-amd64.vmx",
+                    "id-workstation": "DS4KNPDL3MMUOB1C7TP78RMQLDM1UKTB"
+                },
+                {
+                    "id-hacktux": "6420326868",
+                    "name": "Windows-10-32b-Codesys-PLC",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_DIVISION_PARTS_MODBUS.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-CODESYS-PLC.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-CODESYS-PLC\\Windows-10-32-CODESYS-PLC.vmx",
+                    "id-workstation": "TQM6O87IBKCMHQNVK3QVIKGU0K1QO6G5"
+                },
+                {
+                    "id-hacktux": "7907966190",
+                    "name": "Windows-10-32b-FactoryIO",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_DIVISION_PARTS_MODBUS.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-FACTORY-IO.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-FACTORY-IO\\Windows-10-32-FACTORY-IO.vmx",
+                    "id-workstation": "9T7HKICH7A7ICNO131UOFEMTFGRBSJV9"
+                }
+            ]
+        },
+        {
+            "id": "8733421466",
+            "name": "Division Parts Laboratory OPC-UA",
+            "type": "Attack",
+            "description": "In a factory there is a system that allows different parts to be split to different locations, the PLC communicates with the sensors and actuators via the OPC-UA communication protocol, the aim is simple to carry out the actions that the user wants.",
+            "flag-guided": false,
+            "Tags": {
+                "Protocol": "OPC-UA"
+            },
+            "vms-necessary": [
+                {
+                    "id-hacktux": "3757509143",
+                    "name": "Kali-Hacktux",
+                    "vm-username": "kali",
+                    "vm-password": "kali",
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\kali-linux-2024.1-vmware-amd64\\kali-linux-2024.1-vmware-amd64.vmx",
+                    "id-workstation": "DS4KNPDL3MMUOB1C7TP78RMQLDM1UKTB"
+                },
+                {
+                    "id-hacktux": "6420326868",
+                    "name": "Windows-10-32b-Codesys-PLC",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_DIVISION_PARTS_OPC_UA.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-CODESYS-PLC.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-CODESYS-PLC\\Windows-10-32-CODESYS-PLC.vmx",
+                    "id-workstation": "TQM6O87IBKCMHQNVK3QVIKGU0K1QO6G5"
+                },
+                {
+                    "id-hacktux": "7907966190",
+                    "name": "Windows-10-32b-FactoryIO",
+                    "vm-username": "Hacktux",
+                    "vm-password": "hacktux",
+                    "scripts_to_run": {
+                        "lab-start": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-START-LAB_DIVISION_PARTS_OPC_UA.bat",
+                        "turn-off-lab": "C:\\Users\\HACKTUX\\Documents\\HACKTUX-SCRIPTS\\SCRIPT-TURN-OFF-FACTORY-IO.bat"
+                    },
+                    "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-FACTORY-IO\\Windows-10-32-FACTORY-IO.vmx",
+                    "id-workstation": "9T7HKICH7A7ICNO131UOFEMTFGRBSJV9"
+                }
+            ]
+        }
+    ]
+}

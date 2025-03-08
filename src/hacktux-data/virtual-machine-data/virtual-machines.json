@@ -1,0 +1,46 @@
+{
+    "vms": [
+        {
+            "id-hacktux": "3757509143",
+            "name": "Kali-Hacktux",
+            "hacktux-nic": 2,
+            "requirements": {
+                "minimum": {
+                    "number-processors": "1",
+                    "RAM-memory": "1024"
+                }
+            },
+            "snapshot": "Default-VM-State",
+            "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\kali-linux-2024.1-vmware-amd64\\kali-linux-2024.1-vmware-amd64.vmx",
+            "id-workstation": "DS4KNPDL3MMUOB1C7TP78RMQLDM1UKTB"
+        },
+        {
+            "id-hacktux": "6420326868",
+            "name": "Windows-10-32b-Codesys-PLC",
+            "hacktux-nic": 1,
+            "requirements": {
+                "minimum": {
+                    "number-processors": "1",
+                    "RAM-memory": "2048"
+                }
+            },
+            "snapshot": "Default-VM-State",
+            "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-CODESYS-PLC\\Windows-10-32-CODESYS-PLC.vmx",
+            "id-workstation": "TQM6O87IBKCMHQNVK3QVIKGU0K1QO6G5"
+        },
+        {
+            "id-hacktux": "7907966190",
+            "name": "Windows-10-32b-FactoryIO",
+            "hacktux-nic": 1,
+            "requirements": {
+                "minimum": {
+                    "number-processors": "1",
+                    "RAM-memory": "2048"
+                }
+            },
+            "snapshot": "Default-VM-State",
+            "path": "C:\\Users\\Duarte Batista\\Hacktux\\virtual-machines\\Windows-10-32-FACTORY-IO\\Windows-10-32-FACTORY-IO.vmx",
+            "id-workstation": "9T7HKICH7A7ICNO131UOFEMTFGRBSJV9"
+        }
+    ]
+}
