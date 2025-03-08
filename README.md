@@ -17,3 +17,24 @@
 
 ## Description
 Hacktux was a project developed for the Computer Project curricular unit of the Computer Engineering course at the Polytechnic of Leiria. The aim of this application is to control and run virtual laboratories for industrial environments. Hacktux is made up of a python application that, using an interactive UI, allows the user to interact with and activate the available virtual laboratories. It also uses the VMware Workstation Pro hypervisor to run the virtual machines that simulate the virtual environment.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/066e40b5-78ce-41e7-b4c8-dc88e4a8e92d">
+</div>
+
+Hacktux creates virtual environments thanks to 3 virtual machines that are connected to each other on the same local network. One of the machines is Kali Linux, which is used by users to carry out attacks and forensics on the virtual environment. The other two machines are 32-bit versions of Windows 10, one of which contains Codesys software to simulate the operation of a PLC and the other runs Factory IO software to simulate an industrial factory in 3D. Thanks to these machines and software, the user can have a more emersive experience as they can see the exchange of data between the two systems and can see the objects in the factory in motion. Furthermore, because they are virtual machines that require few resources, they can be run on several computers that don't need to contain very specialized hardware
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9bbd0e8f-e547-4889-a06d-4e00145610ba">
+</div>
+
+
+## Contributing
+This project was developed by:
+  - Manuel José Antunes Eusébio
+  - Duarte Bento Batista
+
+With the help of the teachers
+  - Dr.Leonel Filipe Simões Santos
+  - Dr.Rogério Luís de Carvalho Costa 
+
