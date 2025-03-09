@@ -10,8 +10,9 @@
 
 ## Table of Contents
   - [Description](#description)
-  - [Technologies used in this work](#technologies-used-in-this-work)
-  - [Project Images](#project-images)
+  - [System Requirements](#system-requirements)
+  - [Instaling Hacktux](#instaling-hacktux)
+  - [Using Hacktux](#using-hacktux)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -27,6 +28,17 @@ Hacktux creates virtual environments thanks to 3 virtual machines that are conne
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9bbd0e8f-e547-4889-a06d-4e00145610ba">
 </div>
+
+## System Requirements
+Before you start, check if you have the following requirements:
+
+  ### Software Requirements
+  - The operating system must be Windows, the project was carried out on Windows 11, Windows 10 should work as well, older versions are not recommended such as Windows 7 or Windows Vista
+  - The version of Python used by this project was 3.12, other versions have not yet been validated feel free to test with others
+  - You must have VMware Worksation Pro installed, version 17.5.2 or higher, because in this version it is possible to use this hypervisor for free for personal use cases.
+
+  ### Hardware Requirements
+  - To run the virtual machines in their lightest state, the PC must have a total of 5GB of RAM dedicated just to them, so it is recommended that the PC has 8GB of RAM or more
 
 
 ## Contributing
